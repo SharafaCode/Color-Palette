@@ -1,0 +1,336 @@
+/* .....................NavBar Section...................... */
+
+header{
+
+    width: 100vw;
+    min-height: 13vh;
+    border-bottom: .1rem solid #7e7e7e59;
+    overflow: hidden;
+    
+}
+
+nav{
+
+    width: 95vw;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: .2rem;
+   
+    
+
+    
+}
+.logo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: translateY(1.2rem);
+    z-index:999;
+
+}
+
+.logo{
+    width: 4.4rem;
+    height: 4.4rem;
+    border-radius: 50%;
+    
+   
+ 
+    background: linear-gradient(to right, #c32222,#c13d34,#c09041,#c0b855,#a0bf68,#9abf89,#87bea3,#77b8be,#8aa2be,#8290be,#5d72bd,#8d8a94,#b34dcf,#c779b9,#e53ea9,#ee6b9a,#f48d6b,#fdbb2d);
+    
+}
+
+.logo-text{
+
+    font-size: 1.5rem;
+    font-weight: 900;
+    padding-top: .5rem;
+    background: linear-gradient(to right, #c32222,#c13d34,#c09041,#c0b855,#a0bf68,#9abf89,#87bea3,#77b8be,#8aa2be,#8290be,#5d72bd,#8d8a94,#b34dcf);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+
+.form-field{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    
+}
+
+
+
+input{
+    width: 30rem;
+    height: 4rem;
+    border-radius: 50px;
+    border: 0.1rem solid #2b2b2bd5;
+    padding-left: 2rem;
+    font-size: 1.7rem;
+    font-weight: 100;
+    color: #2b2b2bd5;
+}
+
+.btn{
+   margin-right: 1.5rem;
+    
+    
+}
+
+
+button{
+    background: none;
+    border: none;
+    border: 0.1rem solid #2b2b2bd5;
+    width: 4.4rem;
+    height: 4.4rem;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: .9rem;
+    font-size: 2.4rem;
+    color: #2b2b2bd5;
+    
+
+}
+
+button:hover{
+    background: #2b2b2bd5;
+    color: #fff;
+}
+
+.search{
+    display: none;
+}
+
+
+
+/* .....................Media Query  Section...................... */
+
+
+@media screen and (min-width: 900px) {
+    
+  
+    .search{
+        display: block;
+
+    }
+
+    button{
+        border-radius: 5rem;
+        width: 10rem;
+        height: 4rem;
+        padding: .2rem;
+        font-size: 1.8rem;
+    }
+
+
+    .search-icon{
+        display: none;
+    }
+}
+
+
+
+ 
+/* ..................... End Media Query  Section...................... */
+
+
+/* .....................End NavBar Section...................... */
+
+
+
+/* .....................Loading Section...................... */
+
+
+.main{
+
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -100;
+
+   
+
+
+    background: linear-gradient(to right, #c32222,#c13d34,#c09041,#c0b855,#a0bf68,#9abf89,#87bea3,#77b8be,#8aa2be,#8290be,#5d72bd,#8d8a94,#b34dcf,#c779b9,#e53ea9,#ee6b9a,#f48d6b,#fdbb2d);
+
+}
+
+
+.circleOut{
+
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    border: .4rem solid #e53ea9;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    animation: spin .9s linear infinite;
+ 
+  
+}
+.innerCircle{
+
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    border: .4rem solid #c32222;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    animation: spin .8s linear infinite;
+   
+}
+.inner-inner-circle{
+
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    border: .4rem solid #fdbb2d;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    animation: spin .9s linear infinite;
+    
+}
+
+
+
+
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+/* .....................End Loading Section...................... */
+
+
+
+
+/* .....................Color Content Section...................... */
+ 
+.content{
+
+    width: 100vw;
+    min-height: 90vh;
+    margin-top: 2rem;
+    z-index: -10;
+    
+}
+
+
+h1{
+
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+
+
+
+
+.data-container{
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 .3rem #c6c6c696;
+    height: 15rem;
+
+    
+}
+
+.clipboard{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+   
+}
+
+.clipboard:hover{
+    background-color: #c6c6c696;
+    padding: .6rem 1.4rem;
+    border-radius: 2rem;
+}
+p{
+ 
+    font-size: 1.5rem;
+    font-weight: 600;
+
+}
+h3{
+    font-size: 1.5rem;
+}
+
+
+.light-color{
+
+    color: #fff;
+}
+
+
+
+
+/* .....................End Content Content Section...................... */
+
+
+
+/* ..................... Alert Content Section...................... */
+
+
+.alert-container{
+    
+    background:#fff;
+    width: 25rem;
+    height: 16rem;
+    box-shadow: 0 0.1rem 0.5rem grey;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    
+}
+
+.content-copy{
+
+    font-size: .65rem;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+   
+
+}
+
+
+
+
+/* ..................... End Alert Content Section...................... */

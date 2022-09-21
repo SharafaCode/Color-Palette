@@ -10,7 +10,6 @@ const ColorPalette = () => {
 
     const [color, setColor] = useState('');
     const [colorData, setColorData] = useState(new Values('#f15025').all(10));
-    const [error, setError] = useState(false);
    
 
 
@@ -29,7 +28,7 @@ const ColorPalette = () => {
 
 
            
-            setError(true);
+          console.log(error);
 
         }
 

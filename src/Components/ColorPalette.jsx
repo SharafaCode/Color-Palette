@@ -46,7 +46,7 @@ const ColorPalette = () => {
                 <div className="logo"></div>
                 <div>
                     <h2 className='logo-text'>
-                        Color Palette
+                        Color Palettes
                     </h2>
                 </div>
             </div>

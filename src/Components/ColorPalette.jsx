@@ -45,9 +45,9 @@ const ColorPalette = () => {
             <div className="logo-container">
                 <div className="logo"></div>
                 <div>
-                    <p className='logo-text'>
+                    <h2 className='logo-text'>
                         Color Palette
-                    </p>
+                    </h2>
                 </div>
             </div>
 

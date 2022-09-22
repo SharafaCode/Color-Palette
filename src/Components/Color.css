@@ -3,9 +3,13 @@
 header{
 
     width: 100vw;
-    min-height: 13vh;
+    min-height: 10vh;
     border-bottom: .1rem solid #7e7e7e59;
     overflow: hidden;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
     
 }
 
@@ -16,6 +20,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    align-items: center;
     padding-top: .2rem;
    
     
@@ -26,15 +31,15 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    transform: translateY(1.2rem);
+    height: 10vh;
+   
     z-index:999;
 
 }
 
 .logo{
-    width: 4.4rem;
-    height: 4.4rem;
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%;
     
    
@@ -45,12 +50,7 @@ nav{
 
 .logo-text{
 
-    font-size: 1.5rem;
-    font-weight: 900;
-    padding-top: .5rem;
-    background: linear-gradient(to right, #c32222,#c13d34,#c09041,#c0b855,#a0bf68,#9abf89,#87bea3,#77b8be,#8aa2be,#8290be,#5d72bd,#8d8a94,#b34dcf);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    display: none;
 }
 
 
@@ -59,39 +59,39 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2.5rem;
+    gap: 1.9rem;
     
 }
 
 
 
 input{
-    width: 30rem;
+    width: 18.5rem;
     height: 4rem;
     border-radius: 50px;
-    border: 0.1rem solid #2b2b2bd5;
+    border: 0.01rem solid #2b2b2b6b;
     padding-left: 2rem;
     font-size: 1.7rem;
     font-weight: 100;
     color: #2b2b2bd5;
 }
 
-.btn{
-   margin-right: 1.5rem;
+/* .btn{
+   margin-right: 2rem;
     
     
-}
+} */
 
 
 button{
     background: none;
     border: none;
     border: 0.1rem solid #2b2b2bd5;
-    width: 4.4rem;
-    height: 4.4rem;
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%;
     cursor: pointer;
-    padding: .9rem;
+    padding: .8rem;
     font-size: 2.4rem;
     color: #2b2b2bd5;
     
@@ -110,6 +110,213 @@ button:hover{
 
 
 /* .....................Media Query  Section...................... */
+
+
+@media screen and (min-width: 360px) {
+
+   
+
+    input{
+
+        width: 22rem;
+    }
+}
+
+
+
+@media screen and (min-width: 375px) {
+
+  
+
+    input{
+
+        width: 24rem;
+    }
+
+
+}
+
+@media screen and (min-width: 390px) {
+
+  
+
+    input{
+
+        width: 25rem;
+    }
+
+
+}
+
+@media screen and (min-width: 393px) {
+
+  
+
+    input{
+
+        width: 25.5rem;
+    }
+
+
+}
+
+
+@media screen and (min-width: 412px) {
+
+  
+
+    input{
+
+        width: 27.2rem;
+    }
+
+
+}
+
+@media screen and (min-width: 414px) {
+
+  
+
+    input{
+
+        width: 27.5rem;
+    }
+
+
+}
+
+
+@media screen and (min-width: 500px) {
+
+    
+    nav{
+    
+        width: 95vw;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: .2rem;
+       
+        
+    
+        
+    }
+
+    
+    .logo{
+        width: 4.4rem;
+        height: 4.4rem;
+        border-radius: 50%;
+        
+       
+     
+        background: linear-gradient(to right, #c32222,#c13d34,#c09041,#c0b855,#a0bf68,#9abf89,#87bea3,#77b8be,#8aa2be,#8290be,#5d72bd,#8d8a94,#b34dcf,#c779b9,#e53ea9,#ee6b9a,#f48d6b,#fdbb2d);
+        
+    }
+    
+   
+    
+    
+    .form-field{
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2.5rem;
+        
+    }
+    
+    
+    
+    input{
+        width: 32.2rem;
+        height: 4rem;
+        border-radius: 50px;
+        border: 0.1rem solid #2b2b2bd5;
+        padding-left: 2rem;
+        font-size: 1.7rem;
+        font-weight: 100;
+        color: #2b2b2bd5;
+    }
+    
+    .btn{
+       margin-right: 1.5rem;
+        
+        
+    }
+    
+    
+    button{
+        background: none;
+        border: none;
+        border: 0.1rem solid #2b2b2bd5;
+        width: 4.4rem;
+        height: 4.4rem;
+        border-radius: 50%;
+        cursor: pointer;
+        padding: .9rem;
+        font-size: 2.4rem;
+        color: #2b2b2bd5;
+        
+    
+    }
+    
+    button:hover{
+        background: #2b2b2bd5;
+        color: #fff;
+    }
+    
+    .search{
+        display: none;
+    }
+    
+    
+
+}
+
+
+
+@media screen and (min-width: 600px) {
+
+
+    .logo-container{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+       
+    }
+
+    .logo-text{
+
+        font-size: 1.60rem;
+        font-weight: 900;
+        padding-top: .5rem;
+        background: linear-gradient(to right, #c32222,#c13d34,#c09041,#c0b855,#a0bf68,#9abf89,#87bea3,#77b8be,#8aa2be,#8290be,#5d72bd,#8d8a94,#b34dcf);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        display: block;
+        transform: translateY(-.5rem);
+        
+    }
+}
+
+
+@media screen and (min-width: 700px) {
+
+
+    
+    .logo-text{
+
+        font-size: clamp(1.60rem, calc(1.08rem + 2.59vw), 2.93rem);
+
+       
+        
+    }
+}
+
 
 
 @media screen and (min-width: 900px) {
